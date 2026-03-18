@@ -1,4 +1,6 @@
-# Build results
+# ==========================================
+# Build Results & Artifacts
+# ==========================================
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -14,14 +16,15 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# Visual Studio cache/options
+# ==========================================
+# Visual Studio & IDE
+# ==========================================
 .vs/
-
-# Visual Studio Code
 .vscode/*
 !.vscode/mcp.json
 !.vscode/settings.json
 !.vscode/launch.json
+!.vscode/tasks.json
 *.code-workspace
 
 # Rider
@@ -32,46 +35,93 @@ bld/
 _ReSharper*/
 *.DotSettings.user
 
-# User-specific files
+# Solution-level cache
+.slnx.cache/
+
+# ==========================================
+# User-Specific Files
+# ==========================================
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-
-# Local history for Visual Studio
 .localhistory/
 
-# Visual Studio Code extensions
+# ==========================================
+# Visual Studio Code Extensions
+# ==========================================
 extensions.json
 *.vsix
 
+# ==========================================
 # NuGet
+# ==========================================
 *.nupkg
 *.snupkg
 .nuget/
+packages/
+.packages/
 
-# Miscellaneous
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
+# ==========================================
+# MCP Server Artifacts
+# ==========================================
+# MCP server runtime files
+ProjectTrackingMCP/bin/
+ProjectTrackingMCP/obj/
+# Keep dab-config.json as it's part of project configuration
+!ProjectTrackingMCP/dab-config.json
 
-# Database and connection strings
+# ==========================================
+# ProjectTrackingApp Artifacts
+# ==========================================
+ProjectTrackingApp/bin/
+ProjectTrackingApp/obj/
+
+# ==========================================
+# Test Results & Coverage
+# ==========================================
+TestResults/
+*.trx
+coverage/
+*.coverage
+[Cc]overage[Rr]esults/
+
+# ==========================================
+# Database & Sensitive Files
+# ==========================================
 *.db
 *.mdf
 *.ldf
 appsettings.local.json
+appsettings.Development.json
+*.pdb
 
-# Environment files
+# ==========================================
+# Environment & Configuration
+# ==========================================
 .env
 .env.local
+.env.*.local
+config.local.json
 
-# Test Results
-TestResults/
-*.trx
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.AppleDouble
+.LSOverride
+*.tmp
 
-# Coverage
-coverage/
-*.coverage
+# ==========================================
+# Build Artifacts & Temporary Files
+# ==========================================
+*.orig
+*.rej
+*.iml
+*.iws
+*.ipr
