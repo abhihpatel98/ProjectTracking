@@ -194,7 +194,8 @@ Location: `UI/ConsoleMenu.cs` (class: `ConsoleMenu`)
 6. Create a new task for a project
 7. Reassign a task to another user
 8. Mark a task as completed
-9. Exit
+9. Create new project
+10. Exit
 ```
 
 ### Implementation
@@ -311,7 +312,13 @@ ProjectTrackingApp/
    - Update Status to 'Completed'
    - Verify update
 
-10. **Compilation**
+10. **Menu Option 9: Create New Project**
+- Ask for project details (name, description, start date, end date)
+- Validate inputs
+- Insert into database
+- Verify creation
+
+11. **Compilation**
     - `dotnet build` must succeed with 0 errors
     - No compiler warnings for naming or patterns
     - All namespaces properly organized
@@ -382,7 +389,7 @@ Bob Smith              Developer       3      1     2        0
 
 - [x] Application compiles without errors (`dotnet build` succeeds)
 - [x] Application starts without exceptions (`dotnet run` works)
-- [x] All 9 menu options function without errors
+- [x] All 10 menu options function without errors
 - [x] Database queries match actual schema (no invalid column errors)
 - [x] User can view projects, tasks, and workload
 - [x] User can create, reassign, and complete tasks
